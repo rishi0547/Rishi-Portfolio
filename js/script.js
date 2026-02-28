@@ -60,7 +60,7 @@ window.addEventListener('scroll', () => {
 
 // ===== Scroll Reveal Animation =====
 const fadeElements = document.querySelectorAll(
-    '.skill-card, .portfolio-card, .about-container, .contact-container, ' +
+    '.skill-card, .project-card, .about-container, .contact-container, ' +
     '.bio-content, .brand-item, .hero-social-proof, .hero-description'
 );
 
@@ -93,9 +93,9 @@ const skillObserver = new IntersectionObserver((entries) => {
 
 skillLevels.forEach(bar => skillObserver.observe(bar));
 
-// ===== Portfolio Filter =====
+// ===== Project Filter =====
 const filterBtns = document.querySelectorAll('.filter-btn');
-const portfolioCards = document.querySelectorAll('.portfolio-card');
+const projectCards = document.querySelectorAll('.project-card');
 
 filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -105,7 +105,7 @@ filterBtns.forEach(btn => {
 
         const filter = btn.getAttribute('data-filter');
 
-        portfolioCards.forEach(card => {
+        projectCards.forEach(card => {
             if (filter === 'all' || card.getAttribute('data-category') === filter) {
                 card.classList.remove('hidden');
                 card.style.animation = 'fadeInCard 0.4s ease forwards';

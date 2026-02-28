@@ -24,7 +24,7 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">ABOUT ME</a></li>
         <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
       </ul>
       <div class="nav-right">
         <a href="#contact" class="btn-contact"
@@ -38,7 +38,7 @@
       <ul>
         <li><a href="#about">ABOUT ME</a></li>
         <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </aside>
@@ -148,75 +148,76 @@
       </div>
     </section>
 
-    <!-- Tech Marquee -->
-    <section class="tech-marquee">
-      <div class="marquee-track">
-        <div class="marquee-group">
-          <img src="images/html.svg" alt="HTML" />
-          <img src="images/github.svg" alt="GitHub" />
-          <img src="images/figma.svg" alt="Figma" />
-          <img src="images/css3.svg" alt="CSS3" />
-          <img src="images/canva.svg" alt="Canva" />
-          <img src="images/bootstrap.svg" alt="Bootstrap" />
-          <img src="images/js.svg" alt="JavaScript" />
-          <img src="images/react.svg" alt="React" />
-        </div>
-        <div class="marquee-group" aria-hidden="true">
-          <img src="images/html.svg" alt="HTML" />
-          <img src="images/github.svg" alt="GitHub" />
-          <img src="images/figma.svg" alt="Figma" />
-          <img src="images/css3.svg" alt="CSS3" />
-          <img src="images/canva.svg" alt="Canva" />
-          <img src="images/bootstrap.svg" alt="Bootstrap" />
-          <img src="images/js.svg" alt="JavaScript" />
-          <img src="images/react.svg" alt="React" />
-        </div>
-      </div>
-    </section>
-
     <!-- Skills Section -->
     <section id="skills" class="skills">
       <h2 class="section-title">SKILLS</h2>
       <p class="section-subtitle">Programming Languages & Tools</p>
+
+      <!-- Tech Marquee -->
+      <div class="tech-marquee">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <img src="images/html.svg" alt="HTML" />
+            <img src="images/github.svg" alt="GitHub" />
+            <img src="images/figma.svg" alt="Figma" />
+            <img src="images/css3.svg" alt="CSS3" />
+            <img src="images/canva.svg" alt="Canva" />
+            <img src="images/bootstrap.svg" alt="Bootstrap" />
+            <img src="images/js.svg" alt="JavaScript" />
+            <img src="images/react.svg" alt="React" />
+          </div>
+          <div class="marquee-group" aria-hidden="true">
+            <img src="images/html.svg" alt="HTML" />
+            <img src="images/github.svg" alt="GitHub" />
+            <img src="images/figma.svg" alt="Figma" />
+            <img src="images/css3.svg" alt="CSS3" />
+            <img src="images/canva.svg" alt="Canva" />
+            <img src="images/bootstrap.svg" alt="Bootstrap" />
+            <img src="images/js.svg" alt="JavaScript" />
+            <img src="images/react.svg" alt="React" />
+          </div>
+        </div>
+      </div>
+
       <div class="skills-grid">
         <div class="skill-card">
-          <span class="skill-icon">&lt;/&gt;</span>
+          <img class="skill-icon" src="images/html.svg" alt="HTML / CSS" />
           <h3>HTML / CSS</h3>
           <div class="skill-bar">
             <div class="skill-level" data-level="95%"></div>
           </div>
         </div>
         <div class="skill-card">
-          <span class="skill-icon">JS</span>
+          <img class="skill-icon" src="images/js.svg" alt="JavaScript" />
           <h3>JavaScript</h3>
           <div class="skill-bar">
             <div class="skill-level" data-level="90%"></div>
           </div>
         </div>
         <div class="skill-card">
-          <span class="skill-icon">⚛</span>
+          <img class="skill-icon" src="images/react.svg" alt="React" />
           <h3>React</h3>
           <div class="skill-bar">
             <div class="skill-level" data-level="88%"></div>
           </div>
         </div>
         <div class="skill-card">
-          <span class="skill-icon">🟢</span>
-          <h3>Node.js</h3>
+          <img class="skill-icon" src="images/canva.svg" alt="Canva" />
+          <h3>Canva</h3>
           <div class="skill-bar">
             <div class="skill-level" data-level="85%"></div>
           </div>
         </div>
         <div class="skill-card">
-          <span class="skill-icon">🐍</span>
-          <h3>Python</h3>
+          <img class="skill-icon" src="images/java.svg" alt="Java" />
+          <h3>Java</h3>
           <div class="skill-bar">
             <div class="skill-level" data-level="80%"></div>
           </div>
         </div>
         <div class="skill-card">
-          <span class="skill-icon">🗄</span>
-          <h3>Databases</h3>
+          <img class="skill-icon" src="images/figma.svg" alt="Figma" />
+          <h3>Figma</h3>
           <div class="skill-bar">
             <div class="skill-level" data-level="82%"></div>
           </div>
@@ -224,61 +225,61 @@
       </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-      <h2 class="section-title">PORTFOLIO</h2>
-      <div class="portfolio-filters">
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2 class="section-title">PROJECTS</h2>
+      <div class="project-filters">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="web">Web Development</button>
         <button class="filter-btn" data-filter="app">App Development</button>
         <button class="filter-btn" data-filter="design">Design</button>
       </div>
-      <div class="portfolio-grid">
-        <div class="portfolio-card" data-category="web">
-          <div class="portfolio-img">
+      <div class="project-grid">
+        <div class="project-card" data-category="web">
+          <div class="project-img">
             <img src="images/project1.jpg" alt="Project 1" />
-            <div class="portfolio-overlay">
+            <div class="project-overlay">
               <a href="#" class="overlay-btn">View Project ↗</a>
             </div>
           </div>
-          <div class="portfolio-info">
-            <span class="portfolio-tag">Web Development</span>
+          <div class="project-info">
+            <span class="project-tag">Web Development</span>
             <h3>E-Commerce Platform</h3>
           </div>
         </div>
-        <div class="portfolio-card" data-category="app">
-          <div class="portfolio-img">
+        <div class="project-card" data-category="app">
+          <div class="project-img">
             <img src="images/project2.jpg" alt="Project 2" />
-            <div class="portfolio-overlay">
+            <div class="project-overlay">
               <a href="#" class="overlay-btn">View Project ↗</a>
             </div>
           </div>
-          <div class="portfolio-info">
-            <span class="portfolio-tag">App Development</span>
+          <div class="project-info">
+            <span class="project-tag">App Development</span>
             <h3>Task Management App</h3>
           </div>
         </div>
-        <div class="portfolio-card" data-category="web">
-          <div class="portfolio-img">
+        <div class="project-card" data-category="web">
+          <div class="project-img">
             <img src="images/project3.jpg" alt="Project 3" />
-            <div class="portfolio-overlay">
+            <div class="project-overlay">
               <a href="#" class="overlay-btn">View Project ↗</a>
             </div>
           </div>
-          <div class="portfolio-info">
-            <span class="portfolio-tag">Web Development</span>
+          <div class="project-info">
+            <span class="project-tag">Web Development</span>
             <h3>SaaS Dashboard</h3>
           </div>
         </div>
-        <div class="portfolio-card" data-category="design">
-          <div class="portfolio-img">
+        <div class="project-card" data-category="design">
+          <div class="project-img">
             <img src="images/project4.jpg" alt="Project 4" />
-            <div class="portfolio-overlay">
+            <div class="project-overlay">
               <a href="#" class="overlay-btn">View Project ↗</a>
             </div>
           </div>
-          <div class="portfolio-info">
-            <span class="portfolio-tag">Design</span>
+          <div class="project-info">
+            <span class="project-tag">Design</span>
             <h3>Brand Identity</h3>
           </div>
         </div>
@@ -371,7 +372,7 @@
         <p>&copy; 2026 Fahrizal. All rights reserved.</p>
         <div class="footer-links">
           <a href="#about">About</a>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
