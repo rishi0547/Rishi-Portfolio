@@ -61,7 +61,7 @@ window.addEventListener('scroll', () => {
 // ===== Scroll Reveal Animation =====
 const fadeElements = document.querySelectorAll(
     '.skill-card, .portfolio-card, .about-container, .contact-container, ' +
-    '.timeline-item, .bio-content, .brand-item, .hero-social-proof, .hero-description'
+    '.bio-content, .brand-item, .hero-social-proof, .hero-description'
 );
 
 fadeElements.forEach(el => el.classList.add('fade-in'));
@@ -115,33 +115,6 @@ filterBtns.forEach(btn => {
         });
     });
 });
-
-// ===== Testimonial Slider =====
-const testimonialCards = document.querySelectorAll('.testimonial-card');
-const dots = document.querySelectorAll('.dot');
-let currentTestimonial = 0;
-
-function showTestimonial(index) {
-    testimonialCards.forEach(card => card.classList.remove('active'));
-    dots.forEach(dot => dot.classList.remove('active'));
-
-    testimonialCards[index].classList.add('active');
-    dots[index].classList.add('active');
-    currentTestimonial = index;
-}
-
-dots.forEach(dot => {
-    dot.addEventListener('click', () => {
-        const index = parseInt(dot.getAttribute('data-index'));
-        showTestimonial(index);
-    });
-});
-
-// Auto-rotate testimonials
-setInterval(() => {
-    const next = (currentTestimonial + 1) % testimonialCards.length;
-    showTestimonial(next);
-}, 5000);
 
 // ===== Contact Form Handler =====
 const contactForm = document.getElementById('contactForm');
