@@ -35,11 +35,13 @@ img {
 
 /* ===== Tech Marquee ===== */
 .tech-marquee {
-    width: 80%;
-    margin: 0 auto 2rem;
-    background: transparent;
-    padding: 1.5rem 0;
+    width: 100%;
+    padding: 2rem 0;
+    background: #f5f0eb;
+    border-bottom: 1px solid #e5ddd5;
     overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
 }
 
 .marquee-track {
@@ -514,44 +516,14 @@ img {
     font-style: italic;
 }
 
-/* ===== Brands ===== */
-.brands {
-    padding: 2.5rem 4%;
-    background: #f5f0eb;
-    border-bottom: 1px solid #e5ddd5;
-}
-
-.brands-track {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3.5rem;
-    flex-wrap: wrap;
-}
-
-.brand-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #999;
-    letter-spacing: 1px;
-    transition: color 0.3s;
-}
-
-.brand-item:hover {
-    color: #1a1a1a;
-}
-
-.brand-icon {
-    font-size: 1.3rem;
-}
-
 /* ===== About ===== */
 .about {
     padding: 6rem 4%;
     background: #fff;
+}
+
+.about .section-title {
+    margin-bottom: 3rem;
 }
 
 .about-container {
@@ -1117,10 +1089,6 @@ img {
         font-size: 2rem;
     }
 
-    .brands-track {
-        gap: 2rem;
-    }
-
     .skills-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -1148,11 +1116,4 @@ img {
         font-size: 1.6rem;
     }
 
-    .brands-track {
-        gap: 1.5rem;
-    }
-
-    .brand-item {
-        font-size: 0.9rem;
-    }
 }

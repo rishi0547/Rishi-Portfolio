@@ -80,18 +80,28 @@
       </div>
     </section>
 
-    <!-- Brands / Clients -->
-    <section class="brands">
-      <div class="brands-track">
-        <div class="brand-item">
-          <span class="brand-icon">🪶</span> FeatherDev
+    <!-- Tech Marquee -->
+    <section class="tech-marquee">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <img src="images/html.svg" alt="HTML" />
+          <img src="images/github.svg" alt="GitHub" />
+          <img src="images/figma.svg" alt="Figma" />
+          <img src="images/css3.svg" alt="CSS3" />
+          <img src="images/canva.svg" alt="Canva" />
+          <img src="images/bootstrap.svg" alt="Bootstrap" />
+          <img src="images/js.svg" alt="JavaScript" />
+          <img src="images/react.svg" alt="React" />
         </div>
-        <div class="brand-item"><span class="brand-icon">◉</span> Spherule</div>
-        <div class="brand-item">
-          <span class="brand-icon">🏛</span> GlobalBank
-        </div>
-        <div class="brand-item">
-          <span class="brand-icon">✦</span> Nietzsche
+        <div class="marquee-group" aria-hidden="true">
+          <img src="images/html.svg" alt="HTML" />
+          <img src="images/github.svg" alt="GitHub" />
+          <img src="images/figma.svg" alt="Figma" />
+          <img src="images/css3.svg" alt="CSS3" />
+          <img src="images/canva.svg" alt="Canva" />
+          <img src="images/bootstrap.svg" alt="Bootstrap" />
+          <img src="images/js.svg" alt="JavaScript" />
+          <img src="images/react.svg" alt="React" />
         </div>
       </div>
     </section>
@@ -139,32 +149,6 @@
     <section id="skills" class="skills">
       <h2 class="section-title">SKILLS</h2>
       <p class="section-subtitle">Programming Languages & Tools</p>
-
-      <!-- Tech Marquee -->
-      <div class="tech-marquee">
-        <div class="marquee-track">
-          <div class="marquee-group">
-            <img src="images/html.svg" alt="HTML" />
-            <img src="images/github.svg" alt="GitHub" />
-            <img src="images/figma.svg" alt="Figma" />
-            <img src="images/css3.svg" alt="CSS3" />
-            <img src="images/canva.svg" alt="Canva" />
-            <img src="images/bootstrap.svg" alt="Bootstrap" />
-            <img src="images/js.svg" alt="JavaScript" />
-            <img src="images/react.svg" alt="React" />
-          </div>
-          <div class="marquee-group" aria-hidden="true">
-            <img src="images/html.svg" alt="HTML" />
-            <img src="images/github.svg" alt="GitHub" />
-            <img src="images/figma.svg" alt="Figma" />
-            <img src="images/css3.svg" alt="CSS3" />
-            <img src="images/canva.svg" alt="Canva" />
-            <img src="images/bootstrap.svg" alt="Bootstrap" />
-            <img src="images/js.svg" alt="JavaScript" />
-            <img src="images/react.svg" alt="React" />
-          </div>
-        </div>
-      </div>
 
       <div class="skills-grid">
         <div class="skill-card">
@@ -253,26 +237,32 @@
         </div>
         <div class="project-card" data-category="web">
           <div class="project-img">
-            <img src="images/project3.jpg" alt="Project 3" />
+            <img src="images/project3.png" alt="Project 3" />
             <div class="project-overlay">
-              <a href="#" class="overlay-btn">View Project ↗</a>
+              <a href="https://rishi0547.github.io/QUIZ/" class="overlay-btn"
+                >View Project ↗</a
+              >
             </div>
           </div>
           <div class="project-info">
             <span class="project-tag">Web Development</span>
-            <h3>SaaS Dashboard</h3>
+            <h3>Online Quiz Platform</h3>
           </div>
         </div>
         <div class="project-card" data-category="design">
           <div class="project-img">
             <img src="images/project4.jpg" alt="Project 4" />
             <div class="project-overlay">
-              <a href="#" class="overlay-btn">View Project ↗</a>
+              <a
+                href="https://www.linkedin.com/posts/rishikumar-p-1768r_collegemagazine-saengineeringcollege-teamwork-activity-7305227079384535040-Hs96?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE1zMqoBFwPwOw7iQBC8fyIMtYNbcH3D40w"
+                class="overlay-btn"
+                >View Project ↗</a
+              >
             </div>
           </div>
           <div class="project-info">
             <span class="project-tag">Design</span>
-            <h3>Brand Identity</h3>
+            <h3>Sagasa'25</h3>
           </div>
         </div>
       </div>
@@ -325,15 +315,25 @@
               >LinkedIn</a
             >
 
-            <a href="#" class="social-link">Whatsapp</a>
+            <a
+              href="https://wa.me/918838702604?text=Hi%20Rishi,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20with%20you."
+              class="social-link"
+              >Whatsapp</a
+            >
           </div>
         </div>
-        <form class="contact-form" id="contactForm">
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="https://formsubmit.co/rishikumar01768@gmail.com"
+          method="POST"
+        >
           <div class="form-group">
             <label for="name">Name</label>
             <input
               type="text"
               id="name"
+              name="name"
               placeholder="Your full name"
               required
             />
@@ -343,23 +343,43 @@
             <input
               type="email"
               id="email"
+              name="email"
               placeholder="your@email.com"
               required
             />
           </div>
           <div class="form-group">
             <label for="subject">Subject</label>
-            <input type="text" id="subject" placeholder="Project inquiry" />
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Project inquiry"
+            />
           </div>
           <div class="form-group">
             <label for="message">Message</label>
             <textarea
               id="message"
+              name="message"
               rows="5"
               placeholder="Tell me about your project..."
               required
             ></textarea>
           </div>
+          <!-- FormSubmit Settings -->
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Portfolio Message 🚀"
+          />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://rishi0547.github.io/Rishi-Portfolio/"
+          />
           <button type="submit" class="btn-submit">
             Send Message <span class="arrow">↗</span>
           </button>
