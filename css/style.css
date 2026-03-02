@@ -53,6 +53,9 @@ img {
 
 .arrow {
     display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
     transition: transform 0.3s;
 }
 
@@ -1085,7 +1088,7 @@ img {
         grid-template-columns: 1fr;
     }
 
-    .btn-contact span.arrow {
+    .btn-contact .arrow {
         display: none;
     }
 
