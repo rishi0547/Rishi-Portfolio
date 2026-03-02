@@ -25,31 +25,24 @@ sidebar.querySelectorAll('a').forEach(link => {
     });
 });
 
-// ===== Navbar Scroll Effect =====
+// ===== Navbar Scroll Effect & Active Nav Link =====
 const navbar = document.querySelector('.navbar');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.08)';
-    } else {
-        navbar.style.boxShadow = 'none';
-    }
-});
-
-// ===== Active Nav Link on Scroll =====
 const sections = document.querySelectorAll('section[id]');
 const navItems = document.querySelectorAll('.nav-links a');
 
 window.addEventListener('scroll', () => {
-    let current = '';
+    // Navbar shadow
+    navbar.style.boxShadow = window.scrollY > 50
+        ? '0 2px 20px rgba(0, 0, 0, 0.08)'
+        : 'none';
 
+    // Active section highlight
+    let current = '';
     sections.forEach(section => {
-        const sectionTop = section.offsetTop - 120;
-        if (window.scrollY >= sectionTop) {
+        if (window.scrollY >= section.offsetTop - 120) {
             current = section.getAttribute('id');
         }
     });
-
     navItems.forEach(item => {
         item.classList.remove('active');
         if (item.getAttribute('href') === `#${current}`) {
@@ -60,8 +53,7 @@ window.addEventListener('scroll', () => {
 
 // ===== Scroll Reveal Animation =====
 const fadeElements = document.querySelectorAll(
-    '.skill-card, .project-card, .about-container, .contact-container, ' +
-    '.bio-content, .brand-item, .hero-social-proof, .hero-description'
+    '.skill-card, .project-card, .about-container, .contact-container, .bio-content'
 );
 
 fadeElements.forEach(el => el.classList.add('fade-in'));
